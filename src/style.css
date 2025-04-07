@@ -68,8 +68,27 @@ h2 {
   box-shadow: 0 0 10px rgba(243, 87, 87, 0.5);
 }
 
-.random-number {
+.results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
   margin-top: 16px;
-  font-size: 1.2rem;
-  color: #90caf9;
+}
+
+.result-card {
+  background-color: #3a3a3a;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 8px 0;
 }

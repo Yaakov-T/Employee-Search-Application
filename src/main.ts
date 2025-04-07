@@ -1,5 +1,5 @@
 import './style.css';
-import { setupButtons } from './setupButtons'
+import { setupButtons } from './setupButtons';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 if (app) {
@@ -11,8 +11,11 @@ if (app) {
                 <div>
                     <button class="button" id="searchButton">Search</button>
                     <button class="button" id="randomButton">Random Search</button>
+                    <button class="button" id="clearButton" style="display: none;">Clear</button>
                 </div>
-                <p id="randomNumber" class="random-number"></p>
+                <div id="resultsContainer" class="results-container">
+                    <p id="message" class="message"></p>
+                </div>
             </div>
         </div>
     `;
